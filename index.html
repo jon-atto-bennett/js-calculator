@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <form name ="myCalculator" id="calculator" >
+    <h1>Calculator</h1>
+    <input type="text" name="display" id="display" />
+    <div id="buttons">
+    <input type="button" class="button" value="7" onClick="submitNum(7)"/>
+    <input type="button" class="button" value="8" onClick="submitNum(8)"/>
+    <input type="button" class="button" value="9" onClick="submitNum(9)"/>
+    <input type="button" class="button" value="/" onClick="submitOperator('/', false)"/><br>
+    <input type="button" class="button" value="4" onClick="submitNum(4)"/>
+    <input type="button" class="button" value="5" onClick="submitNum(5)"/>
+    <input type="button" class="button" value="6" onClick="submitNum(6)"/>
+    <input type="button" class="button" value="*" onClick="submitOperator('*', false)"/><br>
+    <input type="button" class="button" value="1" onClick="submitNum(1)"/>
+    <input type="button" class="button" value="2" onClick="submitNum(2)"/>
+    <input type="button" class="button" value="3" onClick="submitNum(3)"/>
+    <input type="button" class="button" value="-" onClick="submitOperator('-',false)"/><br>
+    <input type="button" class="button" value="0" onClick="submitNum(0)"/>
+    <input type="button" class="button" value="." onClick="submitNum('.')"/>
+    <input type="button" class="button" value="=" onClick="submitOperator('', true)"/>
+    <input type="button" class="button" value="+" onClick="submitOperator('+')"/><br>
+    <input type="button" class="button" value="AC" onClick="clearDisplay()"/>
+  </div>
+  </form>
+
+
+</body>
+
+</html>
